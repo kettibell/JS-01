@@ -1,61 +1,13 @@
-// let productName = 'iPhone X';
-// alert(productName);
-
-// productName = 'Nokia 3200';
-// alert(productName);
-
-// const userName = prompt('Enter your name');
-// const greetings = userName + ', hello!';
-
-// alert(greetings);
-
-// const userAge = parseFloat(prompt('Enter your age'));
-// alert(userAge);
-// // const nextAge = userAge + 1;
-// const nextAge = addOne(userAge);
-// alert(nextAge);
-
-// function addOne(val) {
-//     const result = val + 1;
-//     return result;
-// }
-
-// Should increase price by 10%
-/*function calPrice(price) {
-    const result = price * 1.1;
-    return result;
-    
-}*/
-
-//const oldPrice = parseFloat(prompt('Enter price'));
-//const newPrice = calPrice(oldPrice);
-//alert(newPrice);
-
-/*function checkAge(age) {
-    if (age >= 18 && age < 100) {
-        return 'You are adult';
-    } else if (age > 100) {
-        return 'You are middle age';
-    } else {
-        return 'You are kid';
-    }
-}*/
-
-/*const userAge = parseInt(prompt('Enter your age'));
-const message = checkAge(userAge);
-alert(message);*/
-
-
 function quadraticEquation(a, b, c) {
     const discriminant = b * b - 4 * a * c;
     if (discriminant < 0) {
         return 'Oooops! No solution, because discriminant is negative,';
     } else if (discriminant == 0) {
-        var x1 = (-b + Math.sqrt(discriminant)) / (2 * a);
+        let x1 = (-b + Math.sqrt(discriminant)) / (2 * a);
         return 'Only one solution: X = ' + x1 + ', because discriminant is equal to 0';
     } else {
-        var x1 = (-b + Math.sqrt(discriminant)) / (2 * a);
-        var x2 = (-b - Math.sqrt(discriminant)) / (2 * a)
+        let x1 = (-b + Math.sqrt(discriminant)) / (2 * a);
+        let x2 = (-b - Math.sqrt(discriminant)) / (2 * a)
         return 'Congratulation! X1 = ' + x1.toFixed(1) + ', X2 = ' + x2.toFixed(1);
     }
 }
